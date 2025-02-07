@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./letter-m.png">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="maindiv">
+            <div id="tododiv">
+
+                <form>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Task Title</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">
+                            Discription
+                        </label>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-dark">Submit Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="tabletask">
+        <!-- <div> -->
+            <h3>
+                Table Task
+            </h3>
+            <ul id="tasklist"  class="list-group">
+            </ul>
+        <!-- </div> -->
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

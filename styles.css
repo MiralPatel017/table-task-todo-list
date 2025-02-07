@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+    background-repeat: no-repeat;
+}
+
+#tododiv,#tabletask{
+    position: relative;
+    /* left: 20%; */
+    width: 100%;
+    border-width: 0.5px;
+    border: solid rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    background-color:#ffffff15;
+}
+
+@media (max-width: 1000px) {
+    #tasklist{
+        padding-bottom: 10px;
+        overflow-x: scroll;
+    }
+}
+
+#tabletask{
+    margin-top: 50px;
+    width: 100%;
+}
+
+#tabletask h3{
+    text-align: center;
+    color: #f4f4f4;
+    min-width: 100%;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    min-width: 100%;
+}
+
+@media (max-width: 800px) {
+    ul .lis{
+        min-width: 100vh;
+        padding-right: 150px;
+    }
+}
+
+ul{
+    gap: 10px;
+    width: 100%;
+}
+
+li div{
+    
+    width: 100%;
+    display: flex;
+}
+
+li div button{
+    position: relative;
+}
+
+li div div{
+    text-overflow: ellipsis;
+    width: 350px;
+}
+
+#tasklist{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+}
